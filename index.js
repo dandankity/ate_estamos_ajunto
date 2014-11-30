@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/public'))
 
 
 app.get('/', function(request, response) {
-  response.send("boa noite paixao" + cool());
+  response.send(bootstrap.html);
 })
 
 
