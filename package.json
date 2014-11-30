@@ -1,0 +1,20 @@
+{
+  "name": "ate_estamos_ajunto",
+  "version": "0.1.0",
+  "description": "ate_estamos_ajunto is to show how much time until we're together again",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x",
+    "cool-ascii-faces": "~1.3.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digiron/ate_estamos_ajunto"
+  }
+}
