@@ -4,11 +4,16 @@ var cool = require('cool-ascii-faces');
 
 
 app.set('port', (process.env.PORT || 5000))
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', function(request, response) {
-  response.send(bootstrap.html);
+  response.sendFile("./bootstrap.html", {root: './public'});
+})
+
+
+app.get('/cool_face', function(request, response) {
+  response.send(cool());
 })
 
 
