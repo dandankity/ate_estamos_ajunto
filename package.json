@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "express": "~4.9.x",
-    "cool-ascii-faces": "~1.3.x"
+    "cool-ascii-faces": "~1.3.x",
+     "bower": "0.6.x"
   },
   "engines": {
     "node": "0.10.x"
@@ -16,5 +17,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/digiron/ate_estamos_ajunto"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
 }
