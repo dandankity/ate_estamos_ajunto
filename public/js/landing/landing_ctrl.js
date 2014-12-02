@@ -5,6 +5,7 @@ define(['./module', 'angular-route'], function(landing) {
 
       updateTimes($scope, countdown);
       $scope.chegamos = countdown.getArrivalDate();
+      $scope.chegamos_local_time = countdown.getArrivalLocalDate();
 
       $interval(function() {
         updateTimes($scope, countdown);

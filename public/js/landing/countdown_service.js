@@ -12,6 +12,9 @@ define(['./module', 'angular-route'], function(landing) {
       getArrivalDate: function() {
         return new Date(arrivalDate.getTime() + new Date().getTimezoneOffset() * 60000).toLocaleString();
       },
+      getArrivalLocalDate: function() {
+        return arrivalDate.toLocaleString();
+      },
       getClock: function() {
         return countdown(arrivalDate);
       }
@@ -32,7 +35,7 @@ define(['./module', 'angular-route'], function(landing) {
       return;
     }
 
-    var current = getUtcTime();
+    var current = new Date();
     var remaining = parseInt((end - current) / 1000); //remaining seconds,
 
     if (remaining <= 0) {
