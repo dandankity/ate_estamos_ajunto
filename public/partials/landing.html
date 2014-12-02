@@ -1,8 +1,9 @@
 <p>Data e tempo em Chicago: {{ chicago_time }}</p>
 <p>Data e tempo onde vc esta: {{ local_time }}</p>
 <p>Nos Dois vao ser em Chicago: {{ arrival_time }}</p>
-<p>{{ (((until_together_time/1000)/60)/60)/24 | number:0 }} dias,
-  {{ ((until_together_time/1000)/60)/60 % 24 | number:0 }} horas,
-  {{ (until_together_time/1000)/60 % 60 | number:0 }} minutos, e
-  {{ until_together_time/1000 % 60 | number:0 }} segundos ate estamos ajunto :)
-</p>
+<div class="countDown">
+  <span id="days">{{ ourTime.days }}</span>
+  <span id="hours">{{ ourTime.hours }}</span>
+  <span id="minutes">{{ ourTime.minutes }}</span>
+  <span id="seconds">{{ ourTime.seconds }}</span>
+</div>
