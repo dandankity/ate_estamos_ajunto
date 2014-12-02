@@ -1,1 +1,1 @@
-define(['./landing_ctrl'], function () {});
+define(['./landing_ctrl', './countdown_service'], function () {});
