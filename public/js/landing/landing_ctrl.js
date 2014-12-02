@@ -1,8 +1,7 @@
-define(['./module'], function(landing) {
+define(['./module', 'angular-route'], function(landing) {
   'use strict';
 
-  landing.controller('landing', ['$scope', '$interval',
-    function($scope, $interval) {
+  landing.controller('landing', ['$scope', '$interval', function($scope, $interval) {
 
       updateTimes($scope);
       $scope.arrival_time = getArrivalTime().toLocaleString();
@@ -14,8 +13,7 @@ define(['./module'], function(landing) {
     }
   ]);
 
-  landing.config(['$routeProvider',
-    function($routeProvider) {
+  landing.config(['$routeProvider', function($routeProvider) {
       $routeProvider.when('/', {
         templateUrl: 'partials/landing.html',
         controller: 'landing'

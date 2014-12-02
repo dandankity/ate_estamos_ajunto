@@ -1,7 +1,7 @@
 define([
     'angular',
-    './landing/index',
-    'angular-route'
+    './landing/index'
+
 ], function (ng) {
     'use strict';
 

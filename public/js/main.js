@@ -7,6 +7,9 @@ require.config({
     shim: {
         'angular': {
             exports: 'angular'
+        },
+        'angular-route': {
+          deps: ['angular']
         }
     },
     deps: ['./bootstrap']
